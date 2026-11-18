@@ -10,9 +10,14 @@ Published at: <https://carlogrisetti.github.io/crocette-azzurre-privacy/>
 That URL is the one linked from the app's About screen and entered in the
 Play Console.
 
-- `index.html` — the page itself (Italian, self-contained: no scripts, no
-  external assets, no analytics).
+- `index.html` — the privacy policy itself (Italian, self-contained: no
+  scripts, no external assets, no analytics).
+- `cancella-account/index.html` — the Play-required account-deletion page
+  (Italian + short English section), published at
+  `<https://carlogrisetti.github.io/crocette-azzurre-privacy/cancella-account>`.
+  This URL is entered in the Play Console Data safety form and linked from
+  policy §10 — keep it stable forever.
 
-To change the policy: edit `index.html` and push — GitHub Pages redeploys
-within about a minute. If the URL itself ever changes, update the app's
+To change a page: edit the HTML and push — GitHub Pages redeploys within
+about a minute. If the policy URL itself ever changes, update the app's
 `privacyPolicyUrl` constant in `lib/src/backend/models.dart` as well.
